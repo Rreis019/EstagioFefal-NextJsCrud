@@ -6,11 +6,6 @@ import Axios from 'axios';
 //Mensagem 100 max
 
 
-function handleSubmit() 
-{
-    alert("Submitted");
-}
-
 
 
 export default class EditPost extends Component 
