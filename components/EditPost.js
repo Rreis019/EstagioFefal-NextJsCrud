@@ -30,7 +30,7 @@ export default class EditPost extends Component
                <div className='mid-col'>
                     <div className='header-post'>
                         <input placeholder='Title'  className='input-h1'></input>
-                        <input placeholder='Author' className='input-h2'></input>
+                        <input placeholder='Author' className='input-h2' disabled></input>
                     </div>
                     <div className='post-content'>
                         <textarea placeholder='Msg' className='input-p' name="Text1" cols="60"  maxlength="100" rows="5"></textarea>
