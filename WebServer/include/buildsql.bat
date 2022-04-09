@@ -1,0 +1,1 @@
+gcc sqlite3.c -c -O3 -s
