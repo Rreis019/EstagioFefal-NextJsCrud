@@ -127,7 +127,7 @@ void UserModel::print(){
 //FREE AFTER USE
 char* UserModel::toJson(){
     char* result = new char[256];
-    sprintf(result, "{\"id\": %d, \"name\": \"%s\", \"email\": \"%s\", \"password\": \"%s\"}", this->id, this->name, this->email, this->pass);
+    sprintf(result, "{\"id\": %d, \"name\": \"%s\", \"email\": \"%s\"}", this->id, this->name, this->email);
   return result;
 
 
