@@ -1,0 +1,19 @@
+.navbar_hamburger
+{
+    display: none;
+    flex-direction:column;
+    text-align: center;
+
+    width: 100%;
+    background-color: rgb(86, 60, 238);
+    color: white;
+}
+
+.navbar_hamburger a{
+    padding: 5px;
+}
+
+.navbar_hamburger a:hover,.navbar_hamburger button:hover{
+    color : black;
+}
+

@@ -1,0 +1,118 @@
+/* create variable color with rgb(33,21,32) named batat  */
+/*create*/
+:root {
+    --borderColor: #C4C4C4;
+}
+
+
+.table_gray{
+   width: 100%;
+   max-width: 1000px;
+
+}
+
+
+
+.table_gray th
+{
+
+    font-size: 24px;
+    padding: 12px;
+    font-family: 'Inter';
+    font-weight: 900;
+    line-height: 39px;
+    text-align: center;
+    background: #5337EE;
+    color: white;
+}
+
+.table_gray td
+{
+
+    font-size: 16px;
+    padding: 6px 10px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+    
+    
+}
+
+/*alternate beetween td colors*/
+.table_gray tr:nth-child(even)
+{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+.table_gray tr
+{
+    border-bottom: 1px solid var(--borderColor);
+}
+.table_gray a,.btn_blue
+{
+    color: white;
+    background: #5337EE;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0px 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+.table_gray .btn_blue:hover{
+    background: #4122ee;
+    cursor: pointer;
+
+}
+
+.hoverDarkBlue:hover{
+    background: rgb(55, 29, 204);
+}
+
+
+.actions{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media all and (max-width: 600px) {
+
+
+    #col_id{
+        display: none;
+    }
+
+    .table_gray td
+    {
+        font-size: 15px;
+        padding: 3px 0px;
+    }
+
+    .table_gray th{
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    .table_gray button{
+        padding:  0px 2px;
+        font-size: 12px;
+    }
+}
+
+
+@media all and (max-width: 300px) {
+    .table_gray{
+        display: block;
+        overflow: scroll;
+    }
+
+}
+
+
+

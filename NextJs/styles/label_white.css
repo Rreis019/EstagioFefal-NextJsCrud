@@ -1,0 +1,17 @@
+    
+#label_white
+{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all 0.3s;
+    display: none;
+}
+
+#label_white:hover
+{
+    color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+
+}

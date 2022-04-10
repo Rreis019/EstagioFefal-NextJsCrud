@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko&family=Tajawal&family=Titan+One&display=swap');
+@import "btn_delete.css";
+.post-container{
+    display: grid;
+    grid-template-columns: 0.8fr 4fr 0.3fr;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: rgb(250,250, 250);
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.mid-col{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
+}
+
+.header-post{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+}
+.header-post h1,.header-post .input-h1{
+    background-color: transparent;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size:  32px;
+    line-height: 37px;
+    word-break: break-all;
+    color: black;
+}
+
+.header-post h2,.header-post .input-h2{
+    background-color: transparent;
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 43px;
+    color: #9f9f9f;
+}
+
+
+.header-post .input-h1,.header-post .input-h2{
+    border-bottom: 1px solid black;
+}
+.header-post .input-h1:focus,.header-post .input-h2:focus,.input-p{
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+
+.input-h1,.input-h2{
+    overflow: scroll;
+}
+
+textarea:required {
+    box-shadow: none;
+    resize: none;
+}
+
+
+.post-content{
+    word-break: break-all;
+    word-wrap:  break-word;
+    overflow: hidden;
+}
+.post-content p,.input-p{
+    background-color: transparent;
+    border: none;
+    font-family: 'Amiko';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.icon32{
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s ease-in-out;
+}
+
+.icon32:hover{
+    transform: scale(1.05);
+}
+
+.left-col{
+   padding: 10px;
+   display: flex;
+}
+
+.user-image {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.post-container:hover
+{
+
+}
+.allPosts
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 780px;
+    gap:20px;
+}
+
+@media all and (max-width: 800px) {
+ 
+    .post-container{grid-template-columns: 0fr 4fr 0.3fr;}    
+    .allPosts .user-image{
+        display: hidden;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+
+@media all and (max-width: 650px) 
+{
+    .allPosts{
+        max-width: 100%;
+    }
+    .post-container{
+
+        display: grid;
+        grid-template-columns: 0fr 1.5fr 30px;
+    }
+    .header-post h1{font-size: 25px;}
+    .icon32{width: 24px;height: 24px;}
+}
+
+@media all and (max-width: 450px) 
+{
+    .post-content p{ font-size: 20px;}
+    .icon32{ margin-top: 10px;}
+}
+
+/*editPost*/
+.input-h1{
+    font-size: 32px;
+}
+
+.input-h2{
+    font-size: 20px;
+}
