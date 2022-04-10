@@ -1,7 +1,7 @@
 <h1>Description</h1>
-Second project done in internship with the aim of learning how to use NextJs framework, TailWind and others. In this branch, a project is done with login, registration and crud.
-The BackEnd is done in c++ using the mongoose library to create the web server.
-The server hash all passwords, has session systems and uses sqlite as database.
+<p>Second project done in internship with the aim of learning how to use NextJs framework, TailWind and others. In this branch, a project is done with login, registration and crud.</p>
+<p>The BackEnd is done in c++ using the mongoose library to create the web server.
+The server hash all passwords, has session systems and uses sqlite as database.</p>
 
 
 <h1>How to run</h1>
