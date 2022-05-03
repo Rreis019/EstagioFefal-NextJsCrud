@@ -8,6 +8,7 @@ The server hash all passwords, has session systems and uses sqlite as database.<
 <p>Open cmd go to the project directory and do</p>
 
 ```
+ npm install
  npm run dev
 ```
 
